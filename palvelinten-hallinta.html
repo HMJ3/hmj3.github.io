@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Henrik Einola - Portfolio</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #000;
+    }
+    h1 {
+      margin: 0;
+    }
+    header {
+      width: 100%;
+      height: autopx;
+      border-bottom: 2px solid #000;
+      padding: 0.5em 1em;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      color: #000;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 2em auto;
+      padding: 0 1em;
+      flex: 1;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .description {
+      color: #555;
+    }
+    footer {
+      width: 100%;
+      height: auto;
+      border-top: 2px solid #000000;
+      padding: 0.5em 1em;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      color: #000;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Henrik Einola</h1>
+  </header>
+
+  <div class="container">
+
+  <h2>Palvelinten Hallinta - Tero Karvisen kurssi, Haaga-Helia</h2>
+    <a href="https://terokarvinen.com/palvelinten-hallinta/" target="_blank">Siirry kurssisivulle</a> 
+    
+    <p>Kurssin suorittanut osaa: </p>
+
+    <ul>
+      <li style="margin-bottom: 0.2em;">Hallita palvelimia kuvailemalla tavoitetilan (idempotenssi)</li>
+      <li style="margin-bottom: 0.2em;">Tekee asetukset pelkkänä tekstinä ja versioitavasti (infrastruktuuri koodina)</li>
+      <li style="margin-bottom: 0.2em;">Pystyy tekemään tavalliset ylläpitotoimet valitulla työkalulla Saltilla (yksi totuus)</li>
+    </ul>
+
+    <h4>Linkit kurssilla suoritettuihin tehtäviin:</h4>
+
+        <ul style="list-style-type: none; padding-left: 3%;">
+          <li style="margin-bottom: 1.5em;">
+            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h1.md"><strong>h1 - Hello Salt</strong></a>
+            <div class="description" style="margin-top: 0.2em;">Master-slave, pull-arkkitehtuuri. Komentojen etäsuoritus (<code>cmd.run</code>, <code>pkg.install</code>). Tietojen kerääminen orjista (<code>grains.items</code>). Esimerkkejä tiloista (<code>file.managed</code>).</div>
+          </li>
+          <li style="margin-bottom: 1.5em;">
+            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h2.md"><strong>h2 - Soitto kotiin</strong></a>
+            <div class="description" style="margin-top: 0.2em;">Herra-orja -arkkitehtuuri verkon yli. Orjan tavoittaminen NATin ja palomuurin takaa. Harjoitusympäristöt Vagrantilla.</div>
+          </li>
+          <li style="margin-bottom: 1.5em;">
+            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h3.md"><strong>h3 - Infraa koodina</strong></a>
+            <div class="description" style="margin-top: 0.2em;">Apache-verkkopalvelimen asennus sekä käyttöänotto. Hyödynnetään skriptejä tehtävän automatisointiin.</div>
+          </li>
+          <li style="margin-bottom: 1.5em;">
+            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h4.md"><strong>h4 - Pkg-file-service</strong></a>
+            <div class="description" style="margin-top: 0.2em;">Demonien hallinta Saltilla. Käsin tehtyjen konfiguraatioiden automatisointi.</div>
+          </li>
+          <li style="margin-bottom: 1.5em;">
+            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h5.md"><strong>h5 - Oma projekti</strong></a>
+            <div class="description" style="margin-top: 0.2em;">Projektin tavoitteena on luoda SaltStackin avulla event driven automaatiomoduuli, joka asentaa ja konfiguroi nginx palvelun. Tämän tehtävä on valvoa sen toimintaa beaconien avulla ja reagoi mahdollisiin häiriöihin reaktorijärjestelmällä.</div>
+          </li>
+      </ul>
+    
+<div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
+<p>Contact info</p>
+<p>Email: <a href="henrik.einola@gmail.com" target="_blank">henrik.einola@gmail.com</a></p>
+<p>Linkedin: <a href="https://www.linkedin.com/in/henrik-einola/" target="_blank">https://www.linkedin.com/in/henrik-einola/</a></p>
+<p>More projects available on: <a href="https://github.com/yourusername" target="_blank">https://github.com/HMJ3</a></p>
+</div>
+  <footer></footer>
+</body>
+</html>

@@ -47,6 +47,8 @@
       text-decoration: none;
     }
     a:hover {
+      transform: scale(1.005);
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
       text-decoration: underline;
     }
     .description {
@@ -61,6 +63,9 @@
       background-color: #ffffff;
       color: #000;
     }
+    .project-title {
+      color: #0066cc;
+    }
   </style>
 
 </head>
@@ -72,56 +77,71 @@
   </header>
 
   <div class="container">
-  <p>Welcome to my portfolio. Below you'll find links to my projects hosted on GitHub. Each project page includes detailed documentation and code.</p>
-  
-  <div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
-  
-  <h3>Palvelinten Hallinta - Tero Karvisen kurssi, Haaga-Helia</h4>
-    <a href="https://terokarvinen.com/palvelinten-hallinta/" target="_blank">Siirry kurssisivulle</a> 
-    
-    <p>Kurssin suorittanut osaa: </p>
+    <!-- 1. Welcome text (unchanged) -->
+    <p>Welcome to my portfolio. Below you'll find links to my projects hosted on GitHub.</p>
 
-    <ul>
-      <li style="margin-bottom: 0.2em;">Hallita palvelimia kuvailemalla tavoitetilan (idempotenssi)</li>
-      <li style="margin-bottom: 0.2em;">Tekee asetukset pelkkänä tekstinä ja versioitavasti (infrastruktuuri koodina)</li>
-      <li style="margin-bottom: 0.2em;">Pystyy tekemään tavalliset ylläpitotoimet valitulla työkalulla Saltilla (yksi totuus)</li>
-    </ul>
+    <div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
 
-    <h4>Linkit kurssilla suoritettuihin tehtäviin:</h4>
-
-        <ul style="list-style-type: none; padding-left: 3%;">
-          <li style="margin-bottom: 1.5em;">
-            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h1.md"><strong>h1 - Hello Salt</strong></a>
-            <div class="description" style="margin-top: 0.2em;">Master-slave, pull-arkkitehtuuri. Komentojen etäsuoritus (<code>cmd.run</code>, <code>pkg.install</code>). Tietojen kerääminen orjista (<code>grains.items</code>). Esimerkkejä tiloista (<code>file.managed</code>).</div>
-          </li>
-          <li style="margin-bottom: 1.5em;">
-            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h2.md"><strong>h2 - Soitto kotiin</strong></a>
-            <div class="description" style="margin-top: 0.2em;">Herra-orja -arkkitehtuuri verkon yli. Orjan tavoittaminen NATin ja palomuurin takaa. Harjoitusympäristöt Vagrantilla.</div>
-          </li>
-          <li style="margin-bottom: 1.5em;">
-            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h3.md"><strong>h3 - Infraa koodina</strong></a>
-            <div class="description" style="margin-top: 0.2em;">Apache-verkkopalvelimen asennus sekä käyttöänotto. Hyödynnetään skriptejä tehtävän automatisointiin.</div>
-          </li>
-          <li style="margin-bottom: 1.5em;">
-            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h4.md"><strong>h4 - Pkg-file-service</strong></a>
-            <div class="description" style="margin-top: 0.2em;">Demonien hallinta Saltilla. Käsin tehtyjen konfiguraatioiden automatisointi.</div>
-          </li>
-          <li style="margin-bottom: 1.5em;">
-            <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h5.md"><strong>h5 - Oma projekti</strong></a>
-            <div class="description" style="margin-top: 0.2em;">Projektin tavoitteena on luoda SaltStackin avulla event driven automaatiomoduuli, joka asentaa ja konfiguroi nginx palvelun. Tämän tehtävä on valvoa sen toimintaa beaconien avulla ja reagoi mahdollisiin häiriöihin reaktorijärjestelmällä.</div>
-          </li>
-      </ul>
+    <!-- 2. About Me section -->
+    <h3>About Me</h3>
+    <p>Enter text here</p>
     
     <div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
 
-  <h4>Robotic Process Automation - UiPath</h4>
+    <!-- 3. Projects section -->
 
-<div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
-<p>Contact info</p>
-<p>Email: <a href="henrik.einola@gmail.com" target="_blank">henrik.einola@gmail.com</a></p>
-<p>Linkedin: <a href="https://www.linkedin.com/in/henrik-einola/" target="_blank">https://www.linkedin.com/in/henrik-einola/</a></p>
-<p>More projects available on <a href="https://github.com/yourusername" target="_blank">my GitHub profile</a></p>
-</div>
+    <h3>Projects</h3>
+
+    <!-- Palvelinten Hallinta -->
+
+    <a href="https://github.com/HMJ3" target="_blank" style="display: block; border: 1px solid #ddd; border-radius: 4px; padding: 1em; background-color: #f9f9f9; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); margin-bottom: 2em; color: inherit; text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+      <div style="pointer-events: none;">
+        <h4 class="project-title" style="margin-top: 0;">Palvelinten Hallinta - Tero Karvisen kurssi, Haaga-Helia</h4>
+        <p>Kurssin suorittanut osaa:</p>
+        <ul>
+          <li style="margin-bottom: 0.2em;">Hallita palvelimia kuvailemalla tavoitetilan (idempotenssi)</li>
+          <li style="margin-bottom: 0.2em;">Tekee asetukset pelkkänä tekstinä ja versioitavasti (infrastruktuuri koodina)</li>
+          <li style="margin-bottom: 0.2em;">Pystyy tekemään tavalliset ylläpitotoimet valitulla työkalulla Saltilla (yksi totuus)</li>
+        </ul>
+      </div>
+    </a>
+
+     <!-- RPA - UiPath -->
+
+    <a href="https://github.com/HMJ3" target="_blank" style="display: block; border: 1px solid #ddd; border-radius: 4px; padding: 1em; background-color: #f9f9f9; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); margin-bottom: 2em; color: inherit; text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+      <div style="pointer-events: none;">
+        <h4 class="project-title" style="margin-top: 0;">Robotic Process Automation - UiPath</h4>
+        <p>Project contains:</p>
+        <ul>
+          <li style="margin-bottom: 0.2em;">Item 1</li>
+          <li style="margin-bottom: 0.2em;">Item 2</li>
+          <li style="margin-bottom: 0.2em;">Item 3</li>
+        </ul>
+      </div>
+    </a>
+
+    <div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
+
+    <!-- 4. Skills section -->
+    <h4>Skills</h4>
+    <div style="line-height: 2em;">
+      <span style="font-size: 1.2em; margin: 6px; display: inline-block;">Linux</span>
+      <span style="font-size: 1.1em; margin: 6px; display: inline-block;">SaltStack</span>
+      <span style="font-size: 1.3em; margin: 6px; display: inline-block;">Python</span>
+      <span style="font-size: 1em; margin: 6px; display: inline-block;">Git</span>
+      <span style="font-size: 1.4em; margin: 6px; display: inline-block;">Automation</span>
+      <span style="font-size: 1.1em; margin: 6px; display: inline-block;">Vagrant</span>
+      <span style="font-size: 0.95em; margin: 6px; display: inline-block;">Apache</span>
+      <span style="font-size: 1.2em; margin: 6px; display: inline-block;">Infrastructure as Code</span>
+    </div>
+
+    <!-- 5. Contact info (unchanged, moved to end) -->
+    <div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
+    <h4>Contact info</h4>
+    <p>Email: <a href="henrik.einola@gmail.com" target="_blank">henrik.einola@gmail.com</a></p>
+    <p>Linkedin: <a href="https://www.linkedin.com/in/henrik-einola/" target="_blank">https://www.linkedin.com/in/henrik-einola/</a></p>
+    <p>More projects available on: <a href="https://github.com/yourusername" target="_blank">https://github.com/HMJ3</a></p>
+  </div>
 
   <footer>
     <h1></h1>
