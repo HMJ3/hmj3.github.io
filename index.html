@@ -7,15 +7,25 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: auto;
-      margin: 2em auto;
-      padding: 0 1em;
       background: #fff;
       color: #000;
     }
     h1 {
+      margin: 0;
+    }
+    header {
+      width: 100%;
       border-bottom: 2px solid #000;
-      padding-bottom: 0.3em;
+      padding: 0.5em 1em;
+      box-sizing: border-box;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 2em auto;
+      padding: 0 1em;
     }
     ul {
       list-style-type: none;
@@ -37,8 +47,11 @@
   </style>
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>Welcome to my IT portfolio. Below you'll find links to my projects hosted on GitHub. Each project page includes detailed documentation and code.</p>
+  <header>
+    <h1>Henrik Einola</h1>
+  </header>
+  <div class="container">
+  <p>Welcome to my IT porjlkdjsflkjtfolio. Below you'll find links to my projects hosted on GitHub. Each project page includes detailed documentation and code.</p>
 
   <ul>
     <li>
@@ -53,8 +66,13 @@
       <a href="https://github.com/yourusername/project3" target="_blank">Project Three</a>
       <div class="description">A simple Flask app for tracking daily tasks and to-dos.</div>
     </li>
+    <li>
+      <a href="https://github.com/yourusername/project3" target="_blank">Project Three</a>
+      <div class="description">A simple Flask app for tracking daily tasks and to-dos.</div>
+    </li>
   </ul>
 
   <p>More projects available on <a href="https://github.com/yourusername" target="_blank">my GitHub profile</a>.</p>
+  </div>
 </body>
 </html>
