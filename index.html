@@ -42,13 +42,6 @@
       padding: 0 1em;
       flex: 1;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin: 1.2em 0;
-    }
     a {
       color: #0066cc;
       text-decoration: none;
@@ -83,54 +76,52 @@
   
   <div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
   
-  <h4>Palvelinten Hallinta</h4>
+  <h4>Palvelinten Hallinta - Tero Karvisen kurssi, Haaga-Helia</h4>
+    <a href="https://terokarvinen.com/palvelinten-hallinta/" target="_blank">Siirry kurssisivulle</a> 
+    
+    <p>Kurssin suorittanut osaa: </p>
 
-     <p>Salt Stack</p>
+    <ul>
+      <li>Hallistee palvelimia kuvailemalla tavoitetilan (idempotenssi)</li>
+      <li>Tekee asetukset pelkkänä tekstinä ja versioitavasti (infrastruktuuri koodina)</li>
+      <li>Pystyy tekemään tavalliset ylläpitotoimet valitulla työkalulla Saltilla (yksi totuus)</li>
+    </ul>
 
-  <ul>
-    <li>
-      <a href="https://github.com/yourusername/project1" target="_blank">Project One</a>
-      <div class="description">A Python script that analyzes CSV data and generates summary statistics.</div>
-    </li>
-    <li>
-      <a href="https://github.com/yourusername/project2" target="_blank">Project Two</a>
-      <div class="description">A web scraper built with BeautifulSoup to monitor product prices.</div>
-    </li>
-    <li>
-      <a href="https://github.com/yourusername/project3" target="_blank">Project Three</a>
-      <div class="description">A simple Flask app for tracking daily tasks and to-dos.</div>
-    </li>
-  </ul>
+    <h4>Linkit kurssilla tehtyihin kotitehtäviin.</h4>
 
+        <ul style="list-style-type: none; padding-left: 3%;">
+          <li style="margin-bottom: 1.5em;">
+            <a href="#lecture1"><strong>1. Hello Salt (h1)</strong></a>
+            <div class="description" style="margin-top: 0.2em;">Master-slave, pull-arkkitehtuuri. Komentojen etäsuoritus (<code>cmd.run</code>, <code>pkg.install</code>). Tietojen kerääminen orjista (<code>grains.items</code>). Esimerkkejä tiloista (<code>file.managed</code>).</div>
+          </li>
+          <li style="margin-bottom: 1.5em;">
+            <a href="#lecture2"><strong>2. Verkon yli (h2)</strong></a>
+            <div class="description" style="margin-top: 0.2em;">Herra-orja -arkkitehtuuri verkon yli. Orjan tavoittaminen NATin ja palomuurin takaa. Harjoitusympäristöt Vagrantilla.</div>
+          </li>
+          <li style="margin-bottom: 1.5em;">
+            <a href="#lecture3"><strong>4. Pkg-file-service (h3)</strong></a>
+            <div class="description" style="margin-top: 0.2em;">Demonien hallinta Saltilla. Käsin tehtyjen konfiguraatioiden automatisointi.</div>
+          </li>
+          <li style="margin-bottom: 1.5em;">
+            <a href="#lecture4"><strong>5. Versionhallinta Gitillä (h4)</strong></a>
+            <div class="description" style="margin-top: 0.2em;"><code>git init</code>, <code>clone</code>, <code>add</code>, <code>commit</code>, <code>pull</code>, <code>push</code>, <code>log</code>. GitHub ja avustavat palvelut.</div>
+          </li>
+          <li style="margin-bottom: 1.5em;">
+            <a href="#lecture5"><strong>5. Oma projekti (h5)</strong></a>
+            <div class="description" style="margin-top: 0.2em;">Projektin tavoitteena on luoda SaltStackin avulla event driven automaatiomoduuli, joka asentaa ja konfiguroi nginx palvelun. Tämän tehtävä on valvoa sen toimintaa beaconien avulla ja reagoi mahdollisiin häiriöihin reaktorijärjestelmällä.</div>
+          </li>
+      </ul>
+    
     <div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
 
+  <h4>Robotic Process Automation - UiPath</h4>
 
-   <h4>Robotic Process Automation</h4>
-
-      <p>UiPath</p>
-
-   <ul>
-    <li>
-      <a href="https://github.com/yourusername/project1" target="_blank">Project One</a>
-      <div class="description">A Python script that analyzes CSV data and generates summary statistics.</div>
-    </li>
-    <li>
-      <a href="https://github.com/yourusername/project2" target="_blank">Project Two</a>
-      <div class="description">A web scraper built with BeautifulSoup to monitor product prices.</div>
-    </li>
-    <li>
-      <a href="https://github.com/yourusername/project3" target="_blank">Project Three</a>
-      <div class="description">A simple Flask app for tracking daily tasks and to-dos.</div>
-    </li>
-  </ul>
-
-  <div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
-  
-  <p>Contact info</p>
-  <p>Email: <a href="henrik.einola@gmail.com" target="_blank">henrik.einola@gmail.com</a></p>
-  <p>Linkedin: <a href="https://www.linkedin.com/in/henrik-einola/" target="_blank">https://www.linkedin.com/in/henrik-einola/</a></p>
-  <p>More projects available on <a href="https://github.com/yourusername" target="_blank">my GitHub profile</a></p>
-  </div>
+<div style="height: 1px; background-color: #e1e4e8; margin: 16px 0;"></div>
+<p>Contact info</p>
+<p>Email: <a href="henrik.einola@gmail.com" target="_blank">henrik.einola@gmail.com</a></p>
+<p>Linkedin: <a href="https://www.linkedin.com/in/henrik-einola/" target="_blank">https://www.linkedin.com/in/henrik-einola/</a></p>
+<p>More projects available on <a href="https://github.com/yourusername" target="_blank">my GitHub profile</a></p>
+</div>
 
   <footer>
     <h1></h1>
