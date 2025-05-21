@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Palvelinten Hallinta - Henrik Einola</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <a href="/index.html"><h1>Henrik Einola</h1></a>
+  </header>
+
+  <div class="back-link" style="margin-left: 10px; margin-top: 10px;">
+    <a href="javascript:history.back()">← Back</a>
+  </div>
+
+  <div class="container">
+
+    <h2>Palvelinten Hallinta - Tero Karvisen kurssi, Haaga-Helia</h2>
+    <a href="https://terokarvinen.com/palvelinten-hallinta/" target="_blank">Siirry kurssisivulle</a>
+
+    <p>Kurssin suorittanut osaa:</p>
+    <ul>
+      <li style="margin-top: 0.2em;">Hallita palvelimia kuvailemalla tavoitetilan (idempotenssi)</li>
+      <li style="margin-top: 0.2em;">Tekee asetukset pelkkänä tekstinä ja versioitavasti (infrastruktuuri koodina)</li>
+      <li style="margin-top: 0.2em;">Pystyy tekemään tavalliset ylläpitotoimet valitulla työkalulla Saltilla (yksi totuus)</li>
+    </ul>
+
+    <h4>Linkit kurssilla suoritettuihin tehtäviin:</h4>
+    <ul style="list-style-type: none; padding-left: 3%;" class="assignment-list">
+      <li style="margin-bottom: 1.5em;"> 
+        <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h1.md"><strong>h1 - Hello Salt</strong></a>
+        <div class="description" style="margin-top: 0.2em;">Master-slave, pull-arkkitehtuuri. Komentojen etäsuoritus (<code>cmd.run</code>, <code>pkg.install</code>). Tietojen kerääminen orjista (<code>grains.items</code>). Esimerkkejä tiloista (<code>file.managed</code>).</div>
+      </li>
+      <li style="margin-bottom: 1.5em;">
+        <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h2.md"><strong>h2 - Soitto kotiin</strong></a>
+        <div class="description" style="margin-top: 0.2em;">Herra-orja -arkkitehtuuri verkon yli. Orjan tavoittaminen NATin ja palomuurin takaa. Harjoitusympäristöt Vagrantilla.</div>
+      </li>
+      <li style="margin-bottom: 1.5em;">
+        <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h3.md"><strong>h3 - Infraa koodina</strong></a>
+        <div class="description" style="margin-top: 0.2em;">Apache-verkkopalvelimen asennus sekä käyttöänotto. Hyödynnetään skriptejä tehtävän automatisointiin.</div>
+      </li>
+      <li style="margin-bottom: 1.5em;">
+        <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h4.md"><strong>h4 - Pkg-file-service</strong></a>
+        <div class="description" style="margin-top: 0.2em;">Demonien hallinta Saltilla. Käsin tehtyjen konfiguraatioiden automatisointi.</div>
+      </li>
+      <li style="margin-bottom: 1.5em;">
+        <a href="https://github.com/HMJ3/linux-course/blob/main/assignments/h5.md"><strong>h5 - Oma projekti</strong></a>
+        <div class="description" style="margin-top: 0.2em;">Projektin tavoitteena on luoda SaltStackin avulla event driven automaatiomoduuli, joka asentaa ja konfiguroi nginx palvelun. Tämän tehtävä on valvoa sen toimintaa beaconien avulla ja reagoi mahdollisiin häiriöihin reaktorijärjestelmällä.</div>
+      </li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <!-- Contact Info -->
+    <h4>Contact info</h4>
+    <p>Email: <a href="mailto:henrik.einola@gmail.com">henrik.einola@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/henrik-einola/" target="_blank">https://www.linkedin.com/in/henrik-einola/</a></p>
+    <p>More projects available on: <a href="https://github.com/HMJ3" target="_blank">https://github.com/HMJ3</a></p>
+
+  </div>
+
+  <footer></footer>
+
+</body>
+</html>
